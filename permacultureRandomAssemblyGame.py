@@ -5,10 +5,10 @@
 
 import random
 
-#Setting the function to be multiplied.
+# Setting the function to be multiplied.
 def createSentenceSheet():
 
-#List of elements
+# List of elements
     elements = ["attic",
                 "barn", "barnyard", "basement", "bee hive", "berms", "brook",
                 "building",
@@ -61,7 +61,7 @@ def createSentenceSheet():
                 "zone 00 (me)", "zone 0 (home)", "zone 1", "zone 2", "zone 3", "zone 4",
                 "zone 5", "zone 6 (beyond site)"]
 
-#Create second list of prepositions
+# Create second list of prepositions
     prepositionList = ["aboard", "about", "above", "across", "after", "against",
                        "along", "alongside", "amid", "amidst", "among", "amonsgt",
                        "anti", "around", "as", "astride", "at", "atop", "according to",
@@ -88,12 +88,12 @@ def createSentenceSheet():
                        "vis-a-vis", "with", "within", "without", "worth", "with reference to",
                        "with regard to"]
 
-#Randomly choose one entry from each list to print into sentence.
+# Randomly choose one entry from each list to print into sentence.
     randomSentence = (random.choice(elements) + ' ' + random.choice(prepositionList) + ' ' +
                       random.choice(elements))
 
     print(randomSentence)
 
-#Creates 3 sentences for this game.
+# Creates x amount of sentences for this game, whichever number is in the range().
 for i in range(1):
     createSentenceSheet()
